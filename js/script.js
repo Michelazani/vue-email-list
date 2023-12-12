@@ -2,7 +2,6 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            mail:'',
             newMail : []
         }
     },
@@ -16,7 +15,7 @@ createApp({
                     (response) => {
                     console.log(response);
                     // inserisco nell'array vuoto le mail
-                    this.newMail.push(response.data.response); 
+                    this.newMail.push(response.data.response);
                 });
             }
         }

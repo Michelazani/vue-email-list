@@ -13,8 +13,11 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
+
         <ul>
-            <li>{{newMail}}</li>
+            <li v-for="(response,index) in newMail">
+                {{newMail[index]}}
+            </li>
         </ul>
     <!-- script js -->
     <script src="./js/script.js"></script>
