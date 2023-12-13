@@ -7,7 +7,7 @@ createApp({
     },
     methods: {
         randomMails(){
-            // CREO CICLO PER VISUALIZZARE MAIL
+            // CREO CICLO PER VISUALIZZARE 10 MAIL
             for (let i= 0; i <10 ; i++){
                 // METTO HTTP DELLA PAGINA 
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(
@@ -17,6 +17,7 @@ createApp({
                     // inserisco nell'array vuoto le mail
                     this.newMail.push(response.data.response);
                 });
+
             }
         }
     },

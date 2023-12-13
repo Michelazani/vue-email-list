@@ -15,7 +15,7 @@
     <div id="app">
 
         <ul>
-            <li v-for="(response,index) in newMail">
+            <li v-for="(response,index) in newMail" v-if="newMail.length >= 10">
                 {{newMail[index]}}
             </li>
         </ul>
